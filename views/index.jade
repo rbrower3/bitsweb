@@ -1,18 +1,65 @@
 extends layout
 
 block content
-  div.navbar.navbar-fixed-top
-    div.navbar-inner
-      div.container
-        a.btn.btn-navbar(data-target=".nav-collapse", data-toggle="collapse")
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        a.brand(href="#") BIT Systems
-        ul.nav
-          li.active
-            a(href="#") Home
-          li
-            a(href="#") Directions
-          li
-            a(href="#") Rates
+  div#wrap
+    div#main.clearfix
+      div.container-fluid
+        div.row-fluid
+          div.span9
+            img(src="images/logo.jpg", style="width: 600px; margin: 20px 0;")
+          div.span3.top-gap
+            ul.nav
+              li Contact
+              li About
+              li Shtoops
+        div.browser-bar
+          ul.nav
+             li LOL
+             li ROFL
+             li BYAAA
+      div.container-fluid
+        div.row-fluid.top-gap
+          div.span6
+            div#myCarousel.carousel.slide
+              ol.carousel-indicators
+                li.active(data-slide-to="0", data-target="#myCarousel")
+                li(data-slide-to="1", data-target="#myCarousel")
+                li(data-slide-to="2", data-target="#myCarousel")
+              div.carousel-inner
+                div.active.item
+                  img(src="http://lorempixel.com/1400/650/technics/4/")
+                  div.carousel-caption
+                    h4 Sets The Cinema Back 900 Years!
+                    p 
+                      | Well, how'd you become king, then? Found them? In Mercia?! The coconut's tropical!
+                div.item
+                  img(src="http://lorempixel.com/1400/650/business/6")
+                  div.carousel-caption
+                    h4 Dennis the pesant
+                    p 
+                      | We found them. The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water
+                div.item
+                  img(src="http://lorempixel.com/1400/650/business/9/")
+                  div.carousel-caption
+                    h4 Blue. No, yel…
+                    p 
+                      | Ni! Ni! Ni! Ni! Well, she turned me into a newt. I dunno. Must be a king.
+          div.span6
+            h1 Engineering. Results.
+            p
+              | Awestruct is a framework for creating static HTML sites. It's inspired by the awesome Jekyll utility in the same genre.
+            p
+              | Additionally, Awestruct integrates technologies such as Compass, Markdown and Haml.
+            p
+              a.btn(href="http://awestruct.org")
+                View details &raquo;
+  div#footer
+    ul.nav
+      li
+        i.icon.icon-white.icon-envelope
+      li
+        i.icon.icon-white.icon-medkit
+      li
+        i.icon.icon-white.icon-phone
+
+
