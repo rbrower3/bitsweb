@@ -1,0 +1,153 @@
+html, body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #wrap {
+  height: 100%;
+}
+
+body > #wrap {
+  height: auto;
+  min-height: 100%;
+}
+
+#main {
+  padding-bottom: 150px;
+}
+
+/* must be same height as the footer */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+.section {
+  width: 50%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #273886;
+  font-family: Advent, Helvetica, Arial, sans-serif;
+}
+
+.browser-bar {
+  position: relative;
+  background: #273886;
+  border-top: 5px solid #7884B4;
+  border-bottom: 5px solid #7884B4;
+  color: #fff;
+  /*width: 50%;*/
+  height: 50px;
+  padding: 15px 0;
+}
+
+.browser-bar:before, .browser-bar:after {
+  content: "";
+  position: absolute;
+  background: #273886;
+  border-top: 5px solid #7884B4;
+  border-bottom: 5px solid #7884B4;
+  top: 0;
+  bottom: 0;
+  width: 9999px;
+  /* some huge width */
+  height: 50px;
+  padding: 15px 0;
+  margin-top: -5px;
+}
+
+.browser-bar:before {
+  right: 100%;
+  padding: 15px 0;
+}
+
+.browser-bar:after {
+  left: 100%;
+  padding: 15px 0;
+}
+
+@font-face {
+  font-family: Advent;
+  src: url(../fonts/advent_regular.ttf);
+}
+
+.top-gap {
+  margin-top: 15px;
+}
+
+.nav {
+  style: none;
+  margin-top: 15px;
+}
+
+.nav li {
+  display: inline;
+  padding-right: 25px;
+  font-size: 1.3em;
+}
+
+.icon {
+  font-size: 1.5em;
+}
+
+#footer {
+  position: relative;
+  background: #273886;
+  border-top: 5px solid #7884B4;
+  color: #fff;
+  /*width: 50%;*/
+  height: 100px;
+  padding: 15px 0;
+  margin-top: -100px;
+  /* negative value of footer height */
+  clear: both;
+  padding-left: 20px;
+}
+
+#footer:before, #footer:after {
+  content: "";
+  position: absolute;
+  background: #273886;
+  border-top: 5px solid #7884B4;
+  top: 0;
+  bottom: 0;
+  width: 9999px;
+  /* some huge width */
+  height: 100px;
+  margin-top: -5px;
+  padding: 15px 0;
+}
+
+#footer:before {
+  right: 100%;
+  padding: 15px 0;
+}
+
+#footer:after {
+  left: 100%;
+  padding: 15px 0;
+}
