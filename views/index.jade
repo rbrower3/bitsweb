@@ -3,28 +3,22 @@ extends layout
 block content
   div#wrap
     div#main.clearfix
-      div.container-fluid
+      div.container
         div.row-fluid
           div.span9
             img(src="images/logo.jpg", style="width: 600px; margin: 20px 0;")
-          div.span3.top-gap
+          div.span3.top-gap-l
             ul.nav
               li Contact
-              li About
-              li Shtoops
+              li Locations
         div.browser-bar
           ul.nav
-             li LOLLERSKATES
-             li ROFLS
-<<<<<<< HEAD
-             li BYAAA
-             li SOI SOI SOI
-=======
-             li BYAAAS
->>>>>>> dan-test
-      div.container-fluid
+             li Home
+             li About Us
+             li Opportunities
+      div.container
         div.row-fluid.top-gap
-          div.span6
+          div.span12
             div#myCarousel.carousel.slide
               ol.carousel-indicators
                 li.active(data-slide-to="0", data-target="#myCarousel")
@@ -32,39 +26,42 @@ block content
                 li(data-slide-to="2", data-target="#myCarousel")
               div.carousel-inner
                 div.active.item
-                  img(src="http://lorempixel.com/1400/650/technics/4/")
+                  img(src="images/billboard1.jpg")
                   div.carousel-caption
                     h4 Sets The Cinema Back 900 Years!
                     p 
                       | Well, how'd you become king, then? Found them? In Mercia?! The coconut's tropical!
                 div.item
-                  img(src="http://lorempixel.com/1400/650/business/6")
+                  img(src="images/billboard2.jpg")
                   div.carousel-caption
                     h4 Dennis the pesant
                     p 
                       | We found them. The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water
                 div.item
-                  img(src="http://lorempixel.com/1400/650/business/9/")
+                  img(src="images/billboard3.jpg")
                   div.carousel-caption
                     h4 Blue. No, yel…
                     p 
                       | Ni! Ni! Ni! Ni! Well, she turned me into a newt. I dunno. Must be a king.
-          div.span6
-            h1 Engineering. Results.
-            p
-              | Awestruct is a framework for creating static HTML sites. It's inspired by the awesome Jekyll utility in the same genre.
-            p
-              | Additionally, Awestruct integrates technologies such as Compass, Markdown and Haml.
-            p
-              a.btn(href="http://awestruct.org")
-                View details &raquo;
+          div.row-fluid.top-gap
+            div.span12
+              h1 Engineering. Results.
+              p
+                | Founded by a small group of engineers in 1999, BITS has grown to nearly 500 highly skilled engineers who are recognized as leaders in their respective fields. The commitment of our employees to "Engineering Results" is the catalyst that has propelled BITS to becoming a leader in software development, R&D, sensor development and signal processing.
+              p
+                | Our engineering teams are highly adept at solving complex problems with the application of leading-edge technology solutions, empowering decision-makers to make better mission-critical decisions. 
+              p
+                | Our operational team excels at signal collection, processing and analysis. We have operational personnel stationed around the world in support of our customers' missions.
+              
   div#footer
-    ul.nav
-      li
-        i.icon.icon-white.icon-envelope
-      li
-        i.icon.icon-white.icon-medkit
-      li
-        i.icon.icon-white.icon-phone
+    div.container
+      h4.footer-font Employee links
+      ul.nav
+        li
+          i.icon.icon-white.icon-envelope 
+        li
+          i.icon.icon-white.icon-medkit 
+        li
+          i.icon.icon-white.icon-phone 
 
 
