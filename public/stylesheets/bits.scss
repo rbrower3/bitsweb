@@ -73,6 +73,11 @@ body > #wrap {
   margin: 0 auto;
 }
 
+.logo-img {
+  width: 375px;
+  margin: 20px 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: $main-color;
   font-family: Advent, Helvetica, Arial, sans-serif;
@@ -86,6 +91,16 @@ h1, h2, h3, h4, h5, h6 {
   color: $light-text-color;
   height: 50px;
   padding: 15px 0;
+}
+
+.navbar-inner {
+  background-image: none;
+  background-color: transparent;
+  border: none;
+}
+
+.navbar .nav>li>a {
+  color: $lightest-purple;
 }
 
 @font-face {
