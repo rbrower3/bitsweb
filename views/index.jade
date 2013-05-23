@@ -3,25 +3,23 @@ extends layout
 block content
   div#wrap
     div#main.clearfix
-      div.container
-        div.row
-          div.span12
-            img(src="images/logo.jpg").logo-img
-            ul.nav.pull-right
-              li Contact
-              li Locations
       div.container-fluid.browser-bar
         div.row-fluid
-          div.container
             div.navbar
               div.navbar-inner
+                img(src="images/logo.jpg").logo-img
                 ul.nav
                   li
                     a About Us
                   li
                     a Opportunities
-      div.container
-        div.row-fluid.top-gap
+                ul.nav.pull-right
+                  li
+                    a Contact
+                  li
+                    a Locations
+      div.container-fluid
+        div.row-fluid
           div.span12
             div#myCarousel.carousel.slide
               ol.carousel-indicators
