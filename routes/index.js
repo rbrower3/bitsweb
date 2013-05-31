@@ -7,4 +7,10 @@ module.exports = function(app) {
 
     res.render('index');
   });
+
+  app.get('/engineering', function (req, res){
+    console.log("Engineering page requested");
+
+    res.render('engineering');
+  });
 }
