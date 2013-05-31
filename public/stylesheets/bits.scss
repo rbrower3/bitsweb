@@ -8,20 +8,20 @@ $lighter-blue: #dce0e6;
 $lightest-blue: lighten($lighter-blue, 10%);
 $darkest-blue: darken($darker-blue, 10%);
 
-$purple: #3c4c92;
-$dark-purple: #273886;
-$darker-purple: #141d46;
-$light-purple: #7884b4;
-$lighter-purple: #c9cde1;
-$lightest-purple: lighten($lighter-purple, 10%);
-$darkest-purple: darken($darker-purple, 10%);
+$blurple: #3c4c92;
+$dark-blurple: #273886;
+$darker-blurple: #141d46;
+$light-blurple: #7884b4;
+$lighter-blurple: #c9cde1;
+$lightest-blurple: lighten($lighter-blurple, 10%);
+$darkest-blurple: darken($darker-blurple, 10%);
 
-$main-color: $dark-purple;
-$accent-color: $light-purple;
-$light-text-color: $lightest-purple;
-$dark-text-color: $darkest-purple;
+$main-color: $dark-blurple;
+$accent-color: $light-blurple;
+$light-text-color: $lightest-blurple;
+$dark-text-color: $darkest-blurple;
 
-$link-color: $lightest-purple;
+$link-color: $lightest-blurple;
 $link-hover-color: $light-blue;
 
 html, body {
@@ -111,7 +111,7 @@ a {
 }
 
 .navbar .nav>li>a {
-  color: $lightest-purple;
+  color: $lightest-blurple;
 }
 
 .navbar .nav>li>a:hover {
@@ -133,7 +133,7 @@ a {
 
 .navbar .brand {
   font-size: 2.0em;
-  color: $lightest-purple;
+  color: $lightest-blurple;
 }
 
 .nav {
@@ -151,11 +151,11 @@ a {
 }
 
 .nav li:hover {
-  border-bottom: solid 5px $light-purple;
+  border-bottom: solid 5px $light-blurple;
 }
 
 .nav li.current {
-  border-bottom: solid 5px $lightest-purple;
+  border-bottom: solid 5px $lightest-blurple;
 }
 
 .icon {
