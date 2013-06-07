@@ -9,11 +9,11 @@
     "openshift"
   ],
   "author": {
-    "name": "OpenShift",
-    "email": "ramr@example.org",
-    "url":  "http://openshift.redhat.com/"
+    "name": "BITS Denver",
+    "email": "moningerj@bit-sys.com",
+    "url":  "http://bit-sys.com/"
   },
-  "homepage": "http://openshift.redhat.com/",
+  "homepage": "http://bitsweb-whopper.rhcloud.com",
   "repository": {
     "type": "git",
     "url": "https://gitub.com/openshift/origin-server"
