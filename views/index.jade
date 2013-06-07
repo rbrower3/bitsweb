@@ -1,72 +1,39 @@
 extends layout
 
 block content
-  div#wrap
-    div#main.clearfix
-      .browser-bar
-        div.container
-          div.row-fluid
-              div.navbar
-                div.navbar-inner
-                  a.brand(href="index") BITSystems
-                  ul.nav
-                    li
-                      a(href="engineering") Engineering.
-                    li
-                      a(href="results") Results.
-                    li
-                      a About Us.
-                  ul.nav.pull-right
-                    li
-                      a Contact
-                    li
-                      a Locations
-      div.container-fluid
-        div.row-fluid
-          div.span12
-            div#myCarousel.carousel.slide
-              ol.carousel-indicators
-                li.active(data-slide-to="0", data-target="#myCarousel")
-                li(data-slide-to="1", data-target="#myCarousel")
-                li(data-slide-to="2", data-target="#myCarousel")
-              div.carousel-inner
-                div.active.item
-                  img(src="images/billboard1.jpg")
-                  div.carousel-caption
-                    h4 Sets The Cinema Back 900 Years!
-                    p 
-                      | Well, how'd you become king, then? Found them? In Mercia?! The coconut's tropical!
-                div.item
-                  img(src="images/billboard2.jpg")
-                  div.carousel-caption
-                    h4 Dennis the pesant
-                    p 
-                      | We found them. The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water
-                div.item
-                  img(src="images/billboard3.jpg")
-                  div.carousel-caption
-                    h4 Blue. No, yel…
-                    p 
-                      | Ni! Ni! Ni! Ni! Well, she turned me into a newt. I dunno. Must be a king.
-          div.row-fluid.top-gap
-            div.span12
-              h1 Engineering. Results.
-              p
-                | Founded by a small group of engineers in 1999, BITS has grown to nearly 500 highly skilled engineers who are recognized as leaders in their respective fields. The commitment of our employees to "Engineering Results" is the catalyst that has propelled BITS to becoming a leader in software development, R&D, sensor development and signal processing.
-              p
-                | Our engineering teams are highly adept at solving complex problems with the application of leading-edge technology solutions, empowering decision-makers to make better mission-critical decisions. 
-              p
-                | Our operational team excels at signal collection, processing and analysis. We have operational personnel stationed around the world in support of our customers' missions.
-              
-  div#footer
-    div.container
-      h4.footer-font.footer-title Employee links
-      ul.nav
-        li
-          i.icon.icon-white.icon-envelope 
-        li
-          i.icon.icon-white.icon-medkit 
-        li
-          i.icon.icon-white.icon-phone 
-
-
+  div.container-fluid
+    div.row-fluid
+      div.span12
+        div#myCarousel.carousel.slide
+          ol.carousel-indicators
+            li.active(data-slide-to="0", data-target="#myCarousel")
+            li(data-slide-to="1", data-target="#myCarousel")
+            li(data-slide-to="2", data-target="#myCarousel")
+          div.carousel-inner
+            div.active.item
+              img(src="images/billboard1.jpg")
+              div.carousel-caption
+                h4 Sets The Cinema Back 900 Years!
+                p 
+                  | Well, how'd you become king, then? Found them? In Mercia?! The coconut's tropical!
+            div.item
+              img(src="images/billboard2.jpg")
+              div.carousel-caption
+                h4 Dennis the pesant
+                p 
+                  | We found them. The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water
+            div.item
+              img(src="images/billboard3.jpg")
+              div.carousel-caption
+                h4 Blue. No, yel…
+                p 
+                  | Ni! Ni! Ni! Ni! Well, she turned me into a newt. I dunno. Must be a king.
+      div.row-fluid.top-gap
+        div.span12
+          h1 Engineering. Results.
+          p
+            | Founded by a small group of engineers in 1999, BITS has grown to nearly 500 highly skilled engineers who are recognized as leaders in their respective fields. The commitment of our employees to "Engineering Results" is the catalyst that has propelled BITS to becoming a leader in software development, R&D, sensor development and signal processing.
+          p
+            | Our engineering teams are highly adept at solving complex problems with the application of leading-edge technology solutions, empowering decision-makers to make better mission-critical decisions. 
+          p
+            | Our operational team excels at signal collection, processing and analysis. We have operational personnel stationed around the world in support of our customers' missions.
