@@ -3,23 +3,24 @@ extends layout
 block content
   div#wrap
     div#main.clearfix
-      div.container-fluid.browser-bar
-        div.row-fluid
-            div.navbar
-              div.navbar-inner
-                a.brand(href="index") BITSystems
-                ul.nav
-                  li
-                    a(href="engineering") Engineering.
-                  li
-                    a(href="results") Results.
-                  li
-                    a About Us.
-                ul.nav.pull-right
-                  li
-                    a Contact
-                  li
-                    a Locations
+      .browser-bar
+        div.container
+          div.row-fluid
+              div.navbar
+                div.navbar-inner
+                  a.brand(href="index") BITSystems
+                  ul.nav
+                    li
+                      a(href="engineering") Engineering.
+                    li
+                      a(href="results") Results.
+                    li
+                      a About Us.
+                  ul.nav.pull-right
+                    li
+                      a Contact
+                    li
+                      a Locations
       div.container-fluid
         div.row-fluid
           div.span12
@@ -59,7 +60,7 @@ block content
               
   div#footer
     div.container
-      h4.footer-font Employee links
+      h4.footer-font.footer-title Employee links
       ul.nav
         li
           i.icon.icon-white.icon-envelope 
