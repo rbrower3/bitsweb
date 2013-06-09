@@ -1,5 +1,8 @@
 // If you are goofing around with the styles, only edit this file.  bits.css is generated from this
 
+$black: #0a0a0a;
+$slate-gray: #484848;
+
 $blue: #567ebb;
 $dark-blue: #1B3A69;
 $darker-blue: #1f1f20;
@@ -84,8 +87,15 @@ body > #wrap {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $main-color;
   font-family: Advent, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: $main-color;
+}
+
+h2, h3, h4, h5, h6 {
+  color: $slate-gray;
 }
 
 a {
@@ -95,7 +105,6 @@ a {
 .browser-bar {
   position: relative;
   background: $main-color;
-  border-top: 5px solid $accent-color;
   border-bottom: 5px solid $accent-color;
   color: $light-text-color;
   height: 40px;
@@ -112,6 +121,7 @@ a {
 
 .navbar .nav>li>a {
   color: $lightest-blurple;
+  text-shadow:0px 1px 0px $black;
 }
 
 .navbar .nav>li>a:hover {
@@ -134,6 +144,7 @@ a {
 .navbar .brand {
   font-size: 2.0em;
   color: $lightest-blurple;
+  text-shadow:0 1px 0 $black;
 }
 
 .nav {
