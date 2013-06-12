@@ -15,12 +15,13 @@ html(lang='en')
   body
     div#wrap
       div#main.clearfix
-        div.container-fluid.browser-bar
+<<<<<<< HEAD
+        .browser-bar
           div.container
-          div.row-fluid
-              div.navbar
-                div.navbar-inner
-                  a.brand BITSystems
+            div.row-fluid
+                div.navbar
+                  div.navbar-inner
+                    a.brand 
                       img(src="images/logo-small-white.png")
                     ul.nav
                       li
@@ -34,6 +35,25 @@ html(lang='en')
                         a Contact
                       li
                         a Locations
+=======
+        div.container-fluid.browser-bar
+          div.row-fluid
+              div.navbar
+                div.navbar-inner
+                  a.brand BITSystems
+                  ul.nav
+                    li
+                      a(href="engineering") Engineering.
+                    li
+                      a Results.
+                    li
+                      a About Us.
+                  ul.nav.pull-right
+                    li
+                      a(href="contact") Contact
+                    li
+                      a Locations
+>>>>>>> master
         block content
 
     div#footer
