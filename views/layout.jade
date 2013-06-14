@@ -1,7 +1,7 @@
 !!! 5
 html(lang='en')
   head
-    title BIT Systems Inc.
+    title BITSystems Inc.
 
     link(rel='stylesheet', href='lib/bootstrap/css/bootstrap.min.css')
     link(rel='stylesheet', href='lib/bootstrap/css/bootstrap-responsive.min.css')
@@ -10,6 +10,7 @@ html(lang='en')
     script(type='text/javascript', src='lib/jquery/jquery.min.js')
     script(type='text/javascript', src='lib/bootstrap/js/bootstrap.min.js')
     script(type='text/javascript', src='lib/bootstrap/js/bootstrap-carousel.js')
+    script(type='text/javascript', src='lib/bootstrap/js/jquery.stellar.min.js')
     script(type='text/javascript', src='js/bits.js')
     
   body
@@ -17,32 +18,42 @@ html(lang='en')
       div#main.clearfix
         div.container-fluid.browser-bar
           div.container
-          div.row-fluid
-              div.navbar
-                div.navbar-inner
-                  a.brand BITSystems
+            div.row-fluid
+                div.navbar
+                  div.navbar-inner
+                    a(href="/").brand
                       img(src="images/logo-small-white.png")
-                    ul.nav
+                    ul.nav.nav-header
                       li
-                        a(href="engineering") Engineering.
+                        a(href="#engineering") Engineering
                       li
-                        a Results.
+                        a(href="#results") Results
                       li
-                        a About Us.
-                    ul.nav.pull-right
+                        a(href="#opportunities") Opportunities
                       li
-                        a Contact
+                        a(href="#contact")Contact
                       li
-                        a Locations
+                        a(href="#employees") Employees
         block content
 
     div#footer
+      a(name="employees")
       div.container
-        h4.footer-font Employee links
-        ul.nav
+        ul.footer-links
+          li Employee links: 
           li
-            i.icon.icon-white.icon-envelope 
+            a(href="https://webmail.six3systems.com/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwebmail.six3systems.com%2fowa%2f")
+              i.icon.icon-white.icon-envelope 
+              span Email
           li
-            i.icon.icon-white.icon-medkit 
+            a(href="https://timesheet.six3systems.com/DeltekTC/welcome.msv")
+              i.icon.icon-white.icon-time 
+              span Timesheet
           li
-            i.icon.icon-white.icon-phone 
+            a(href="")
+              i.icon.icon-white.icon-medkit 
+              span Benefits
+          li
+            a(href="#")
+              i.icon.icon-white.icon-phone 
+              span Contacts
