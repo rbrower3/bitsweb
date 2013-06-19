@@ -1,4 +1,11 @@
-
-public/stylesheets/.sass-cache/06b6f51f1c33581193c159b41806fcb8caeea71b/bits.scssc
+*.sw*
+*~
+dist/
+node_modules/
+vendor/angular-bootstrap/
+vendor/jquery/
+vendor/bootstrap/
+vendor/angular/
+vendor/angular-ui-utils/
 
 .DS_Store
