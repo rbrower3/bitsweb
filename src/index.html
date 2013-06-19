@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html ng-app="ngBoilerplate" ng-controller="AppCtrl">
+  <head>
+    <title>ng-boilerplate</title>
+
+    <!-- your compiles CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/<%= grunt.config.get('pkg.name') %>.css"/>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+
+    <!--[if IE 7>
+    <link rel="stylesheet" href="assets/font-awesome-ie7.min.css>
+    <![endif]-->
+
+    <!-- libs.js contains all of the concatenated third-party libraries -->
+    <script type="text/javascript" src="assets/libs.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+
+    <!-- this is your compiled, minified application code -->
+    <script type="text/javascript" src="assets/<%= grunt.config.get('pkg.name') %>.js"></script>
+
+<!--
+  color: #eaebf3;
+-->
+  </head>
+  
+  <body>
+  <div class="container-fluid">
+        <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">  
+            <ul class="nav">
+            <li>
+                <a href="#/home" class="brand">
+                <img src="assets/images/logo-small-white.png">
+            </a>
+            </li>
+                <li ui-route="/home" ng-class="{active:$uiRoute}">
+                  <a href="#/home"><i class="icon-home"></i>Engineering</a>
+                </li>
+                <li ui-route="/results" ng-class="{active:$uiRoute}">
+                  <a href="#/results"><i class="icon-tasks"></i>Results</a>
+                </li>
+                <li ui-route="/working" ng-class="{active:$uiRoute}">
+                    <a href="#/working"><i class="icon-book"></i>Opportunities</a>
+                </li>
+                <li ui-route="/locations" ng-class="{active:$uiRoute}">
+                    <a href="#/locations"><i class="icon-globe"></i>Locations</a>
+                </li>
+                <li>
+                  <a href="#/employees"><i class="icon-user"></i>Employees</a>
+					<!--
+      				<li><a href="#/about/">email</a></li>
+	      			<li><a href="#/home/">timesheet</a></li>
+      				<li><a href="#/about/">benefits</a></li>
+      				<li><a href="#/about/">contacts</a></li>
+      				-->
+                </li>
+              </ul>
+            </div>
+            </div>
+          </div>
+<br/>
+    <div class="container" ng-view></div>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="footer-inner">
+          <ul class="social">
+          <!--
+            <li><a target="_blank" href="http://gplus.to/joshdmiller"><i class="icon-google-plus-sign"></i></a></li>
+            -->
+            <li><a target="_blank" href="http://twitter.com/six3systems"><i class="icon-twitter-sign"></i></a></li>
+            <li><a target="_blank" href="http://www.linkedin.com/company/bit-systems"><i class="icon-linkedin-sign"></i></a></li>
+            <li><a target="_blank" href="https://github.com/bitsystems"><i class="icon-github-sign"></i></a></li>
+          </ul>
+          
+
+          <p>
+            (c) 2013 BITSystems Inc.
+            <br />
+            Built using
+            <a href="http://joshdmiller.github.io/ng-boilerplate">ng-boilerplate</a>,
+            <a href="http://www.angularjs.org">AngularJS</a>,
+            <a href="http://getbootstrap.com">Bootstrap</a>, 
+            <a href="http://angular-ui.github.com/bootstrap">UI Bootstrap</a>,
+            and 
+            <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>.        
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
