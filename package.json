@@ -1,36 +1,24 @@
 {
-  "name": "OpenShift-Sample-App",
-  "version": "1.0.0",
-  "description": "OpenShift Sample Application",
-  "keywords": [
-    "OpenShift",
-    "Node.js",
-    "application",
-    "openshift"
-  ],
-  "author": {
-    "name": "BITS Denver",
-    "email": "moningerj@bit-sys.com",
-    "url":  "http://www.bit-sys.com/"
-  },
-  "homepage": "http://bitsweb-whopper.rhcloud.com",
+  "author": "Ray Brown",
+  "name": "bitsweb",
+  "version": "0.1.0",
+  "homepage": "http://github.com/rbrower3/bitsweb",
+  "bugs": "https://github.com/rbrower3/bitsweb/issues",
   "repository": {
     "type": "git",
-    "url": "https://gitub.com/openshift/origin-server"
+    "url": "git@github.com:rbrower3/bitsweb.git"
   },
-
-  "engines": {
-    "node": ">= 0.6.0",
-    "npm": ">= 1.0.0"
-  },
-
-  "dependencies": {
-    "express": "3.2.x",
-    "jade": "0.29.x"
-  },
-  "devDependencies": {},
-  "bundleDependencies": [],
-
-  "private": true,
-  "main": "server.js"
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-recess": "~0.3.0",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.4.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-karma": "~0.4.4",
+    "grunt-ngmin": "0.0.2"
+  }
 }

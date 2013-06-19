@@ -1,3 +1,23 @@
+## Quick Start
+
+Install Node.js and then:
+
+```sh
+$ git clone git://github.com/rbrower3/bitsweb
+$ cd bitsweb
+$ sudo npm -g install grunt-cli karma bower
+$ npm install
+$ bower install
+$ grunt watch
+```
+
+This will compile all the css, js, and image files into the dist directory.
+Use your favorite browser to view the index.html file in that dir.
+
+
+ #### Original README.md follows ####
+
+
 Feel free to change or remove this file, it is informational only.
 
 Repo Layout
