@@ -8,6 +8,10 @@
     "type": "git",
     "url": "git@github.com:rbrower3/bitsweb.git"
   },
+  "licenses": {
+    "type": "MIT",
+    "url": "https://raw.github.com/rbrower3/bitsweb/master/LICENSE"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
