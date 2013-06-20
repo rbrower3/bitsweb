@@ -1,0 +1,18 @@
+angular.module("locations/locations.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("locations/locations.tpl.html",
+    "  <div ng-controller=\"LocationsCtrl\">" +
+    "    <leaflet markers=\"locations\" center=\"centerUS\" defaults=\"mapDefaults\"></leaflet>" +
+    "  </div>" +
+    "<h3>Locations</h3>" +
+    "<div class=\"row-fluid\">" +
+    "    <div class=\"span3\" ng-repeat=\"loc in locations\">" +
+    "      <address>" +
+    "        <strong>{{loc.state}}</strong><br>" +
+    "        {{loc.address}}<br>" +
+    "        {{loc.cityState}}<br>" +
+    "        <abbr title=\"Phone\">P:</abbr> {{loc.phone}}" +
+    "      </address>" +
+    "    </div>" +
+    "</div>" +
+    "");
+}]);
